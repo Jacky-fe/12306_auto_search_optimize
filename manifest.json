@@ -1,0 +1,19 @@
+
+{  
+  "name": "12306 ticket auto notification",  
+  "version": "0.0.1",  
+  "manifest_version": 2,  
+  "description": "when get the ticket it will auto send a notification",  
+  "content_security_policy": "script-src 'self'",
+  "browser_action": {  
+    "default_icon": "key.gif" ,
+    "default_title": "12306 auto notification"
+  },
+  "permissions": ["notifications"],
+  "content_scripts": [
+    {
+      "matches": ["https://kyfw.12306.cn/otn/leftTicket/init"],
+      "js": ["ticket.js"]
+    }
+  ]
+}
