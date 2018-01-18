@@ -1,4 +1,3 @@
-var resultDom = document.getElementById('no_filter_ticket');
 var noTicketDom = document.getElementById('no_filter_ticket_6');
 var searchButton = document.getElementById('query_ticket');
 Notification.requestPermission(function (permission) {
